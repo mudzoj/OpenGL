@@ -1,0 +1,40 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mudzo\\Desktop\\Coding\\LearningOpenGL\\LearningOpenGL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2EB43103-84F6-42FB-8BA4-28C8D562ABFE}|LearningOpenGL.AppHost\\LearningOpenGL.AppHost.csproj|c:\\users\\mudzo\\desktop\\coding\\learningopengl\\learningopengl\\learningopengl.apphost\\learningopengl.apphost.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{2EB43103-84F6-42FB-8BA4-28C8D562ABFE}|LearningOpenGL.AppHost\\LearningOpenGL.AppHost.csproj|solutionrelative:learningopengl.apphost\\learningopengl.apphost.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LearningOpenGL.AppHost",
+              "DocumentMoniker": "C:\\Users\\mudzo\\Desktop\\Coding\\LearningOpenGL\\LearningOpenGL\\LearningOpenGL.AppHost\\LearningOpenGL.AppHost.csproj",
+              "RelativeDocumentMoniker": "LearningOpenGL.AppHost\\LearningOpenGL.AppHost.csproj",
+              "ToolTip": "C:\\Users\\mudzo\\Desktop\\Coding\\LearningOpenGL\\LearningOpenGL\\LearningOpenGL.AppHost\\LearningOpenGL.AppHost.csproj",
+              "RelativeToolTip": "LearningOpenGL.AppHost\\LearningOpenGL.AppHost.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-28T05:30:28.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
