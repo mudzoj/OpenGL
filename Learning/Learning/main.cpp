@@ -1,5 +1,6 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include "Shader.h" // Include your shader class
 #include <iostream>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
@@ -8,21 +9,6 @@ void processInput(GLFWwindow* window);
 // settings
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
-
-const char* vertexShaderSource = "#version 330 core\n"
-                                 "layout (location = 0) in vec3 aPos;\n"
-                                 "void main()\n"
-                                 "{\n"
-                                 "   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
-                                 "}\0";
-
-const char* fragmentShaderSource = "#version 330 core\n"
-                                   "out vec4 FragColor;\n"
-                                   "void main()\n"
-                                   "{\n"
-                                   "    FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
-                                   "}\n";
-
 
 int main(){ 
    
@@ -45,77 +31,29 @@ int main(){
         return -1;
     }
     
-    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback); //set rendering space in window!
-                                                                      //example of a typedef and function ptr!!!!
-                                                                     //Even though we dont use window, its a requirement in our function we made.
-                                                                    //window is a callback function!
-                                            //NOTE, this typedef has window passed in as a ptr to a window object (see window object def'n above)
-                                           //this is for efficiency and is common practice in C/C++ dev, you pass in 4bytes rather
-                                          //rather than an entire object, which in some cases can be VERY large.
-                                         //This also saves space as you aren't creating a copy of the object (instance of a class)!
-                                        //This ALSO allows you to directly change the object, rather than changing the copy of the object.
-
-                                           //GLFW implented this way to also hide complexity of window changes, you dont need to know internal
-                                          //structure of the window class, rather u pass it into functions and since its a ptr it 
-                                         //will directly change the instance of the class(ur window object in this case) for you!
+    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback); 
     
-
-//************************************************************************************************************************************
-//**************************************************BUILD and COMPILE shader program**************************************************
-//************************************************************************************************************************************
-    
-    int  success;
-    char infoLog[512];
-
-    //Vertex Shader Initialization
-    unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER);
-    glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
-    glCompileShader(vertexShader);
-
-    glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
-    if (!success){
-        glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
-    }
-
-
-    //Fragment Shader Initialization
-    unsigned int fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-    glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
-    glCompileShader(fragmentShader);
-
-    glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
-    if (!success) {
-        glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
-    }
-
 
     //LINK SHADERS - Shader Program Initialization
-    unsigned int shaderProgram = glCreateProgram();
-    glAttachShader(shaderProgram, vertexShader);
-    glAttachShader(shaderProgram, fragmentShader);
-    glLinkProgram(shaderProgram);
-    glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
-    if (!success) {
-        glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::PROGRAM::COMPILATION_FAILED\n" << infoLog << std::endl;
-    }
-    glDeleteShader(vertexShader);
-    glDeleteShader(fragmentShader);
+    // build and compile our shader program
+    // ------------------------------------
+        Shader shaderProgram("3.3.shader.vs.txt", "3.3.shader.fs.txt"); //All shader program work done in Shader.cpp now!
+  
 
 
-//************************************************************************************************************************************
+//***********************************************************************************************************************************
 //**************************************************SETUP Vertex BUFFER and DATA******************************************************
 //************************************************************************************************************************************
     float vertices[] = {
-     0.5f,  0.5f, 0.0f,  // top right
-     0.5f, -0.5f, 0.0f,  // bottom right
-    -0.5f, -0.5f, 0.0f,  // bottom left
-    -0.5f,  0.5f, 0.0f   // top left 
+     //positions          //colors
+      0.0f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f,  // bottom right
+     -0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,  // bottom left
+      0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f,   // top right
+     -0.5f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f   // top left
+
     };
     unsigned int indices[] = {  // note that we start from 0!
-        0, 1, 3,   // first triangle
+        0, 1, 2,   // first triangle
         1, 2, 3    // second triangle
     };
 
@@ -136,8 +74,12 @@ int main(){
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW); // set vertex attributes pointers
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    //pos attribute     //attribute location,amount of vars,type of vars,normalizeval?,size of each stride,starting ptr
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
+    //color attribute
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6* sizeof(float), (void*)(3 * sizeof(float)));
+    glEnableVertexAttribArray(1);
 
 
     // note that this is allowed, the call to glVertexAttribPointer registered VBO as the vertex attribute's bound vertex buffer object so afterwards we can safely unbind
@@ -158,13 +100,14 @@ int main(){
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        /*glUseProgram(shaderProgram);
-        glBindVertexArray(VAO);
-        glDrawArrays(GL_TRIANGLES, 0, 3);
-        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);*/
+        float timeValue = glfwGetTime();
+        float greenValue = (sin(timeValue) / 2.0f) + 0.5f;
+        
 
+        shaderProgram.use();
 
-        glUseProgram(shaderProgram);
+        int vertexColorLocation = glGetUniformLocation(shaderProgram.ID, "ourColor");
+        glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
         glBindVertexArray(VAO);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
@@ -180,7 +123,6 @@ int main(){
     glDeleteVertexArrays(1, &VAO);
     glDeleteBuffers(1, &VBO);
     glDeleteBuffers(1, &EBO);
-    glDeleteProgram(shaderProgram);
 
     glfwTerminate();
     return 0;
