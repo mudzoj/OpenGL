@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{8DC0BA89-811A-4D90-ADB0-3A6BB56C80EA}|Learning\\Learning.vcxproj|solutionrelative:Learning\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DC0BA89-811A-4D90-ADB0-3A6BB56C80EA}|Learning\\Learning.vcxproj|C:\\Users\\mudzo\\Desktop\\Coding\\LearningOpenGL\\Learning\\Learning\\Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8DC0BA89-811A-4D90-ADB0-3A6BB56C80EA}|Learning\\Learning.vcxproj|solutionrelative:Learning\\Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8DC0BA89-811A-4D90-ADB0-3A6BB56C80EA}|Learning\\Learning.vcxproj|C:\\Users\\mudzo\\Desktop\\Coding\\LearningOpenGL\\Learning\\Learning\\3.3.shader.fs.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8DC0BA89-811A-4D90-ADB0-3A6BB56C80EA}|Learning\\Learning.vcxproj|solutionrelative:Learning\\3.3.shader.fs.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DC0BA89-811A-4D90-ADB0-3A6BB56C80EA}|Learning\\Learning.vcxproj|C:\\Users\\mudzo\\Desktop\\Coding\\LearningOpenGL\\Learning\\Learning\\Shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8DC0BA89-811A-4D90-ADB0-3A6BB56C80EA}|Learning\\Learning.vcxproj|solutionrelative:Learning\\Shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8DC0BA89-811A-4D90-ADB0-3A6BB56C80EA}|Learning\\Learning.vcxproj|C:\\Users\\mudzo\\Desktop\\Coding\\LearningOpenGL\\Learning\\Learning\\3.3.shader.vs.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8DC0BA89-811A-4D90-ADB0-3A6BB56C80EA}|Learning\\Learning.vcxproj|solutionrelative:Learning\\3.3.shader.vs.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,34 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Shader.h",
-              "DocumentMoniker": "C:\\Users\\mudzo\\Desktop\\Coding\\LearningOpenGL\\Learning\\Learning\\Shader.h",
-              "RelativeDocumentMoniker": "Learning\\Shader.h",
-              "ToolTip": "C:\\Users\\mudzo\\Desktop\\Coding\\LearningOpenGL\\Learning\\Learning\\Shader.h",
-              "RelativeToolTip": "Learning\\Shader.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-03T08:48:34.385Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Shader.cpp",
-              "DocumentMoniker": "C:\\Users\\mudzo\\Desktop\\Coding\\LearningOpenGL\\Learning\\Learning\\Shader.cpp",
-              "RelativeDocumentMoniker": "Learning\\Shader.cpp",
-              "ToolTip": "C:\\Users\\mudzo\\Desktop\\Coding\\LearningOpenGL\\Learning\\Learning\\Shader.cpp",
-              "RelativeToolTip": "Learning\\Shader.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-03T08:44:06.807Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -58,10 +32,37 @@
               "RelativeDocumentMoniker": "Learning\\main.cpp",
               "ToolTip": "C:\\Users\\mudzo\\Desktop\\Coding\\LearningOpenGL\\Learning\\Learning\\main.cpp",
               "RelativeToolTip": "Learning\\main.cpp",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAAAL8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-28T05:41:21.783Z",
+              "WhenOpened": "2025-02-03T18:47:35.041Z",
+              "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "3.3.shader.vs.txt",
+              "DocumentMoniker": "C:\\Users\\mudzo\\Desktop\\Coding\\LearningOpenGL\\Learning\\Learning\\3.3.shader.vs.txt",
+              "RelativeDocumentMoniker": "Learning\\3.3.shader.vs.txt",
+              "ToolTip": "C:\\Users\\mudzo\\Desktop\\Coding\\LearningOpenGL\\Learning\\Learning\\3.3.shader.vs.txt",
+              "RelativeToolTip": "Learning\\3.3.shader.vs.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-02-16T04:09:43.653Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "3.3.shader.fs.txt",
+              "DocumentMoniker": "C:\\Users\\mudzo\\Desktop\\Coding\\LearningOpenGL\\Learning\\Learning\\3.3.shader.fs.txt",
+              "RelativeDocumentMoniker": "Learning\\3.3.shader.fs.txt",
+              "ToolTip": "C:\\Users\\mudzo\\Desktop\\Coding\\LearningOpenGL\\Learning\\Learning\\3.3.shader.fs.txt",
+              "RelativeToolTip": "Learning\\3.3.shader.fs.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-02-03T21:14:02.249Z",
+              "IsPinned": true
             }
           ]
         }
