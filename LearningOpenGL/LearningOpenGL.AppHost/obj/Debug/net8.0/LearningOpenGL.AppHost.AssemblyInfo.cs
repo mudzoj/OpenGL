@@ -25,7 +25,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LearningOpenGL.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91664c77aae9f2e27f72e2dae40089fcc02b3c5a")]
 [assembly: System.Reflection.AssemblyProductAttribute("LearningOpenGL.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LearningOpenGL.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

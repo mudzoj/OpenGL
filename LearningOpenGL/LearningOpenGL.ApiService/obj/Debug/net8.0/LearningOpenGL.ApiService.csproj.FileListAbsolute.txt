@@ -1,0 +1,7 @@
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ApiService\obj\Debug\net8.0\LearningOpenGL.ApiService.csproj.AssemblyReference.cache
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ApiService\obj\Debug\net8.0\LearningOpenGL.ApiService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ApiService\obj\Debug\net8.0\LearningOpenGL.ApiService.AssemblyInfoInputs.cache
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ApiService\obj\Debug\net8.0\LearningOpenGL.ApiService.AssemblyInfo.cs
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ApiService\obj\Debug\net8.0\LearningOpenGL.ApiService.csproj.CoreCompileInputs.cache
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ApiService\obj\Debug\net8.0\LearningOpenGL.ApiService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ApiService\obj\Debug\net8.0\LearningOpenGL.ApiService.sourcelink.json

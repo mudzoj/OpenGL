@@ -1,0 +1,13 @@
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ServiceDefaults\bin\Debug\net8.0\LearningOpenGL.ServiceDefaults.deps.json
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ServiceDefaults\bin\Debug\net8.0\LearningOpenGL.ServiceDefaults.dll
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ServiceDefaults\bin\Debug\net8.0\LearningOpenGL.ServiceDefaults.pdb
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ServiceDefaults\obj\Debug\net8.0\LearningOpenGL.ServiceDefaults.csproj.AssemblyReference.cache
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ServiceDefaults\obj\Debug\net8.0\LearningOpenGL.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ServiceDefaults\obj\Debug\net8.0\LearningOpenGL.ServiceDefaults.AssemblyInfoInputs.cache
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ServiceDefaults\obj\Debug\net8.0\LearningOpenGL.ServiceDefaults.AssemblyInfo.cs
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ServiceDefaults\obj\Debug\net8.0\LearningOpenGL.ServiceDefaults.csproj.CoreCompileInputs.cache
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ServiceDefaults\obj\Debug\net8.0\LearningOpenGL.ServiceDefaults.sourcelink.json
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ServiceDefaults\obj\Debug\net8.0\LearningOpenGL.ServiceDefaults.dll
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ServiceDefaults\obj\Debug\net8.0\refint\LearningOpenGL.ServiceDefaults.dll
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ServiceDefaults\obj\Debug\net8.0\LearningOpenGL.ServiceDefaults.pdb
+C:\Users\mudzo\Desktop\Coding\LearningOpenGL\LearningOpenGL\LearningOpenGL.ServiceDefaults\obj\Debug\net8.0\ref\LearningOpenGL.ServiceDefaults.dll

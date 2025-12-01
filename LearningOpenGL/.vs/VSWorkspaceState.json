@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\LearningOpenGL.AppHost"
   ],
+  "SelectedNode": "\\LearningOpenGL.AppHost\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
